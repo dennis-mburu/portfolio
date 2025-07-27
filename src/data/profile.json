@@ -24,12 +24,46 @@
 
   "projects": [
     {
-      "name": "Task Manager",
-      "description": "A simple task management app built using raw PHP and MySQL.",
-      "stack": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
-      "github": "https://github.com/dennis-mburu/task-manager-php",
-      "demo": "https://dennis-taskmanager.vercel.app/",
-      "image": "task-manager.png"
+      "title": "DevLink – Developer Directory",
+      "image": "/projects/devlink.png",
+      "description": "A developer networking platform to connect coders worldwide. Built with Next.js, MongoDB, and Tailwind CSS.",
+      "github": "https://github.com/yourusername/devlink",
+      "live": "https://devlink.vercel.app"
+    },
+    {
+      "title": "TaskHub – Task Manager",
+      "image": "/projects/taskhub.png",
+      "description": "A task management tool that supports team collaboration, deadlines, and real-time updates. Built with React, Node.js, and PostgreSQL.",
+      "github": "https://github.com/yourusername/taskhub",
+      "live": "https://taskhub.app"
+    },
+    {
+      "title": "Blogify – Markdown Blogging App",
+      "image": "/projects/blogify.png",
+      "description": "A blogging platform supporting markdown, tags, and authentication. Built using MERN stack.",
+      "github": "https://github.com/yourusername/blogify",
+      "live": "https://blogify.netlify.app"
+    },
+    {
+      "title": "SnipCode – Code Snippet Saver",
+      "image": "/projects/snipcode.png",
+      "description": "Save and organize your most-used code snippets. Created using React, Express.js, and Firebase.",
+      "github": "https://github.com/yourusername/snipcode",
+      "live": "https://snipcode.io"
+    },
+    {
+      "title": "WeatherWise",
+      "image": "/projects/weatherwise.png",
+      "description": "Weather forecasting app with real-time updates and background illustrations. Built using React and OpenWeatherMap API.",
+      "github": "https://github.com/yourusername/weatherwise",
+      "live": "https://weatherwise.app"
+    },
+    {
+      "title": "Portfolio CMS",
+      "image": "/projects/portfolio-cms.png",
+      "description": "A headless CMS solution for managing personal portfolios. Built with Strapi and Vue.",
+      "github": "https://github.com/yourusername/portfolio-cms",
+      "live": "https://portfolio-cms.site"
     }
   ],
 

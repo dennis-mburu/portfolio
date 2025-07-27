@@ -1,19 +1,10 @@
 import "./App.css";
-import { motion } from "framer-motion";
-import ThemeToggleButton from "./components/themeToggleButton";
-
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.6 }}
-        className="p-8"
-      >
-        <h1 className="text-3xl font-bold">Welcome to My Portfolio</h1>
-      </motion.div>
-      <ThemeToggleButton />
+      <Navbar />
+      <main className="pt-20">{/* Your sections here */}</main>
     </>
   );
 }

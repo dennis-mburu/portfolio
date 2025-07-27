@@ -1,0 +1,73 @@
+{
+  "name": "Dennis Mburu",
+  "title": "Full Stack Developer",
+  "tagline": "Turning coffee into code ☕ | PHP & React Enthusiast",
+  "location": "Nairobi, Kenya",
+  "cvLink": "/Dennis-Mburu-CV-2025.pdf",
+
+  "about": {
+    "bio": "I'm a passionate full-stack developer with a focus on PHP, React, and MySQL. I enjoy building performant web applications and solving real-world problems through code.",
+    "funFacts": ["Linux fan 🐧", "Dark mode lover 🌑", "Self-taught 👨‍💻"]
+  },
+
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "PHP",
+    "React",
+    "MySQL",
+    "Git",
+    "Linux",
+    "TailwindCSS"
+  ],
+
+  "projects": [
+    {
+      "name": "Task Manager",
+      "description": "A simple task management app built using raw PHP and MySQL.",
+      "stack": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/dennis-mburu/task-manager-php",
+      "demo": "https://dennis-taskmanager.vercel.app/",
+      "image": "task-manager.png"
+    }
+  ],
+
+  "experience": [
+    {
+      "role": "Software Developer Intern",
+      "company": "XYZ Tech",
+      "period": "Jan 2024 - Apr 2024",
+      "details": [
+        "Built internal tools in PHP and MySQL",
+        "Collaborated with front-end team using React",
+        "Participated in agile development cycles"
+      ]
+    }
+  ],
+
+  "education": [
+    {
+      "institution": "Zetech University",
+      "degree": "Bachelor of Science in Computer Science",
+      "period": "2019 - 2023"
+    }
+  ],
+
+  "certifications": [
+    {
+      "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)",
+      "link": "https://example.com"
+    },
+    {
+      "name": "Microsoft Certified: Security Operations Analyst Associate (SC-200)",
+      "link": "https://example.com"
+    }
+  ],
+
+  "contact": {
+    "email": "dennis@example.com",
+    "linkedin": "https://linkedin.com/in/dennis-mburu",
+    "github": "https://github.com/dennis-mburu"
+  }
+}

@@ -18,7 +18,7 @@ const ProjectCard = ({
   live,
 }: ProjectCardProps) => {
   return (
-    <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-accent)] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
+    <div className="bg-[var(--color-bg-secondary)] border border-[var(--color-border)] rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition">
       <img
         src={image}
         alt={title}

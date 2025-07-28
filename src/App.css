@@ -5,16 +5,20 @@
 /* Color Themes (will be toggled via class) */
 :root {
   --color-bg: #ffffff;
+  --color-bg-alt: #f9fafb; /* Soft contrast background */
   --color-text: #1f2937;
   --color-accent: #3b82f6;
   --color-muted: #6b7280;
+  --color-border: #e5e7eb; /* Light gray for borders */
 }
 
 [data-theme="dark"] {
   --color-bg: #0f172a;
+  --color-bg-alt: #1e293b; /* Slightly lighter than main bg */
   --color-text: #f8fafc;
   --color-accent: #3b82f6;
   --color-muted: #94a3b8;
+  --color-border: #334155; /* Muted dark gray border */
 }
 
 body {

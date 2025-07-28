@@ -77,7 +77,7 @@ const itemVariants = {
 
 const SkillGrid = () => {
   return (
-    <section className="py-16 px-4">
+    <section id="skills" className="py-16 px-4">
       <SectionTitle title="Skills" />
       <div className="space-y-12">
         {Object.entries(skillCategories).map(([category, skills]) => (

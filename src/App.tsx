@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
+import Contact from "./sections/Contact";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
 import SkillGrid from "./sections/SkillGrid";
@@ -13,6 +14,7 @@ function App() {
         <About />
         <Projects />
         <SkillGrid />
+        <Contact />
       </main>
     </>
   );

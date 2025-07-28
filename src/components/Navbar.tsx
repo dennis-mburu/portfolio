@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed w-full top-0 left-0 z-50 bg-[var(--color-bg)] shadow-xl">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <a
           href="#home"
           className="text-xl font-bold text-[var(--color-accent)]"

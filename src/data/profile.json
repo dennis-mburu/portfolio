@@ -10,94 +10,76 @@
     "funFacts": ["Linux fan 🐧", "Dark mode lover 🌑", "Self-taught 👨‍💻"]
   },
 
-  "skills": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "PHP",
-    "React",
-    "MySQL",
-    "Git",
-    "Linux",
-    "TailwindCSS"
-  ],
-
   "projects": [
     {
       "title": "DevLink – Developer Directory",
-      "image": "/projects/devlink.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "A developer networking platform to connect coders worldwide. Built with Next.js, MongoDB, and Tailwind CSS.",
       "github": "https://github.com/yourusername/devlink",
       "live": "https://devlink.vercel.app"
     },
     {
       "title": "TaskHub – Task Manager",
-      "image": "/projects/taskhub.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "A task management tool that supports team collaboration, deadlines, and real-time updates. Built with React, Node.js, and PostgreSQL.",
       "github": "https://github.com/yourusername/taskhub",
       "live": "https://taskhub.app"
     },
     {
       "title": "Blogify – Markdown Blogging App",
-      "image": "/projects/blogify.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "A blogging platform supporting markdown, tags, and authentication. Built using MERN stack.",
       "github": "https://github.com/yourusername/blogify",
       "live": "https://blogify.netlify.app"
     },
     {
       "title": "SnipCode – Code Snippet Saver",
-      "image": "/projects/snipcode.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "Save and organize your most-used code snippets. Created using React, Express.js, and Firebase.",
       "github": "https://github.com/yourusername/snipcode",
       "live": "https://snipcode.io"
     },
     {
       "title": "WeatherWise",
-      "image": "/projects/weatherwise.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "Weather forecasting app with real-time updates and background illustrations. Built using React and OpenWeatherMap API.",
       "github": "https://github.com/yourusername/weatherwise",
       "live": "https://weatherwise.app"
     },
     {
       "title": "Portfolio CMS",
-      "image": "/projects/portfolio-cms.png",
+      "image": "/src/assets/projects/task-manager.png",
       "description": "A headless CMS solution for managing personal portfolios. Built with Strapi and Vue.",
       "github": "https://github.com/yourusername/portfolio-cms",
       "live": "https://portfolio-cms.site"
     }
   ],
 
-  "experience": [
-    {
-      "role": "Software Developer Intern",
-      "company": "XYZ Tech",
-      "period": "Jan 2024 - Apr 2024",
-      "details": [
-        "Built internal tools in PHP and MySQL",
-        "Collaborated with front-end team using React",
-        "Participated in agile development cycles"
-      ]
-    }
-  ],
-
-  "education": [
-    {
-      "institution": "Zetech University",
-      "degree": "Bachelor of Science in Computer Science",
-      "period": "2019 - 2023"
-    }
-  ],
-
-  "certifications": [
-    {
-      "name": "Microsoft Certified: Security, Compliance, and Identity Fundamentals (SC-900)",
-      "link": "https://example.com"
-    },
-    {
-      "name": "Microsoft Certified: Security Operations Analyst Associate (SC-200)",
-      "link": "https://example.com"
-    }
-  ],
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "React",
+      "Redux",
+      "TypeScript",
+      "Tailwind",
+      "Bootstrap",
+      "Material UI"
+    ],
+    "backend": [
+      "Python",
+      "Ruby",
+      "Rails",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "PostgreSQL",
+      "PHP"
+    ],
+    "tools": ["Git", "GitHub", "Postman", "Azure", "Docker", "Kubernetes"]
+  },
 
   "contact": {
     "email": "dennis@example.com",

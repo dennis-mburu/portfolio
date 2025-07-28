@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Hero from "./sections/Hero";
 import Projects from "./sections/Projects";
+import SkillGrid from "./sections/SkillGrid";
 function App() {
   return (
     <>
@@ -11,6 +12,7 @@ function App() {
         <Hero />
         <About />
         <Projects />
+        <SkillGrid />
       </main>
     </>
   );

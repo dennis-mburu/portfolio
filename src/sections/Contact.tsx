@@ -9,14 +9,15 @@ import {
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e: React.FormEvent) => {
     e.preventDefault();
-    setStatus("idle");
+    setLoading(true);
 
     if (form.current) {
       emailjs
@@ -26,10 +27,14 @@ const Contact = () => {
           form.current,
           "f_XQ1WcX93thVv4OJ"
         )
-        .then(
-          () => setStatus("success"),
-          () => setStatus("error")
-        );
+        .then(() => {
+          toast.success("Message sent successfully!");
+          form.current?.reset(); // Clear form
+        })
+        .catch(() => {
+          toast.error("Something went wrong. Please try again.");
+        })
+        .finally(() => setLoading(false));
     }
   };
 
@@ -117,21 +122,11 @@ const Contact = () => {
           />
           <button
             type="submit"
-            className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-md hover:brightness-110 transition"
+            disabled={loading}
+            className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-md hover:brightness-110 transition disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
-
-          {status === "success" && (
-            <p className="text-green-500 text-sm mt-2">
-              Message sent successfully!
-            </p>
-          )}
-          {status === "error" && (
-            <p className="text-red-500 text-sm mt-2">
-              Something went wrong. Please try again.
-            </p>
-          )}
         </form>
       </div>
     </section>

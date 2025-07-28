@@ -82,8 +82,10 @@
   },
 
   "contact": {
-    "email": "dennis@example.com",
-    "linkedin": "https://linkedin.com/in/dennis-mburu",
-    "github": "https://github.com/dennis-mburu"
+    "email": "youremail@example.com",
+    "phone": "+123 456 7890",
+    "location": "Nairobi, Kenya",
+    "github": "https://github.com/yourusername",
+    "linkedin": "https://linkedin.com/in/yourusername"
   }
 }

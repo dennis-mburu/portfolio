@@ -1,14 +1,14 @@
-// components/Contact.tsx
 import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
+import profile from "../data/profile.json";
+import SectionTitle from "../components/SectionTitle";
 import {
   FaEnvelope,
-  FaPhoneAlt,
+  FaPhone,
   FaMapMarkerAlt,
   FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import SectionTitle from "../components/SectionTitle";
 
 const Contact = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -33,93 +33,104 @@ const Contact = () => {
     }
   };
 
+  const { email, phone, location, github, linkedin } = profile.contact;
+
   return (
-    <section id="contact" className="py-16 px-4">
+    <section
+      id="contact"
+      className="py-16 px-4 sm:px-8 lg:px-16 bg-[var(--color-bg-alt)]"
+    >
       <SectionTitle title="Contact Me" />
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-12 mt-8 items-start">
         {/* Contact Info */}
-        <div className="space-y-6 text-[var(--color-text)] flex flex-col justify-center mx-auto">
-          <div>
-            <h3 className="text-xl font-semibold mb-2">Let's get in touch</h3>
-            {/* <p className="text-sm leading-relaxed">
-              Whether you have a question, want to work together, or just want
-              to say hi — my inbox is always open.
-            </p> */}
-          </div>
+        <div>
+          <h3 className="text-xl font-semibold mb-4 text-[var(--color-text)]">
+            Let's Get In Touch
+          </h3>
+          <p className="text-[var(--color-muted)] mb-6">
+            I’m open to collaborations, projects or just a quick hello.
+          </p>
+          <ul className="space-y-4">
+            <li className="flex items-center gap-3 text-[var(--color-text)]">
+              <FaEnvelope className="text-[var(--color-accent)]" /> {email}
+            </li>
+            <li className="flex items-center gap-3 text-[var(--color-text)]">
+              <FaPhone className="text-[var(--color-accent)]" /> {phone}
+            </li>
+            <li className="flex items-center gap-3 text-[var(--color-text)]">
+              <FaMapMarkerAlt className="text-[var(--color-accent)]" />{" "}
+              {location}
+            </li>
+          </ul>
 
-          <div className="space-y-4 text-sm">
-            <div className="flex items-center gap-3">
-              <FaEnvelope className="text-lg text-[var(--color-accent)]" />
-              <span>dennismburu@example.com</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <FaPhoneAlt className="text-lg text-[var(--color-accent)]" />
-              <span>+254 712 345678</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <FaMapMarkerAlt className="text-lg text-[var(--color-accent)]" />
-              <span>Nairobi, Kenya</span>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="text-lg font-semibold mt-6 mb-2">Follow me</h4>
-            <div className="flex gap-4">
-              <a
-                href="https://github.com/dennis-mburu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm hover:text-[var(--color-accent)] transition"
-              >
-                <FaGithub className="text-lg" /> GitHub
-              </a>
-              <a
-                href="https://linkedin.com/in/dennis-mburu"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-sm hover:text-[var(--color-accent)] transition"
-              >
-                <FaLinkedin className="text-lg" /> LinkedIn
-              </a>
-            </div>
+          <h4 className="mt-8 text-lg font-medium text-[var(--color-text)]">
+            Follow Me
+          </h4>
+          <div className="flex gap-4 mt-4">
+            <a
+              href={github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm bg-[var(--color-accent)] text-white px-4 py-2 rounded-lg hover:brightness-110 transition"
+            >
+              <FaGithub />
+              GitHub
+            </a>
+            <a
+              href={linkedin}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 text-sm border border-[var(--color-accent)] text-[var(--color-accent)] px-4 py-2 rounded-lg hover:bg-[var(--color-accent)] hover:text-white transition"
+            >
+              <FaLinkedin />
+              LinkedIn
+            </a>
           </div>
         </div>
 
         {/* Contact Form */}
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+        <form
+          ref={form}
+          onSubmit={sendEmail}
+          className="bg-[var(--color-bg)] p-6 rounded-2xl shadow-md space-y-4"
+        >
           <input
+            name="user_name"
             type="text"
-            name="from_name"
             placeholder="Your Name"
             required
-            className="p-3 rounded-md border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)]"
+            className="w-full px-4 py-2 rounded-md bg-[var(--color-bg-alt)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
           />
           <input
+            name="user_email"
             type="email"
-            name="from_email"
             placeholder="Your Email"
             required
-            className="p-3 rounded-md border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)]"
+            className="w-full px-4 py-2 rounded-md bg-[var(--color-bg-alt)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
           />
           <textarea
             name="message"
-            placeholder="Your Message"
             rows={5}
+            placeholder="Your Message"
             required
-            className="p-3 rounded-md border border-[var(--color-border)] bg-[var(--color-bg-secondary)] text-[var(--color-text)]"
-          ></textarea>
+            className="w-full px-4 py-2 rounded-md bg-[var(--color-bg-alt)] text-[var(--color-text)] border border-[var(--color-border)] focus:outline-none focus:ring-2 focus:ring-[var(--color-accent)]"
+          />
           <button
             type="submit"
-            className="self-start px-6 py-3 bg-[var(--color-accent)] text-white rounded-md hover:opacity-90 transition"
+            className="bg-[var(--color-accent)] text-white px-6 py-2 rounded-md hover:brightness-110 transition"
           >
             Send Message
           </button>
 
           {status === "success" && (
-            <p className="text-green-500">Message sent successfully! ✅</p>
+            <p className="text-green-500 text-sm mt-2">
+              Message sent successfully!
+            </p>
           )}
           {status === "error" && (
-            <p className="text-red-500">Something went wrong. Try again.</p>
+            <p className="text-red-500 text-sm mt-2">
+              Something went wrong. Please try again.
+            </p>
           )}
         </form>
       </div>

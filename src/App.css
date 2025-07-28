@@ -3,23 +3,66 @@
 @tailwind utilities;
 
 /* Color Themes (will be toggled via class) */
+
+
+
 :root {
-  --color-bg: #ffffff;
-  --color-bg-alt: #f9fafb; /* Soft contrast background */
-  --color-text: #1f2937;
+  --color-bg: #fdf6e3;
+  --color-bg-alt: #fceccf;
+  --color-text: #3c2f2f;
+  --color-accent: #b48e00;
+  --color-muted: #7b5e57;
+  --color-border: #d4c4a1;
+}
+
+[data-theme="dark"] {
+  --color-bg: #1b1b1b;
+  --color-bg-alt: #2a2a2a;
+  --color-text: #fceccf;
+  --color-accent: #facc15;
+  --color-muted: #a89b86;
+  --color-border: #3f3f3f;
+}
+
+
+/* :root {
+  --color-bg: #f0f4ff;
+  --color-bg-alt: #e6efff;
+  --color-text: #1e293b;
   --color-accent: #3b82f6;
-  --color-muted: #6b7280;
-  --color-border: #e5e7eb; /* Light gray for borders */
+  --color-muted: #64748b;
+  --color-border: #cbd5e1;
 }
 
 [data-theme="dark"] {
   --color-bg: #0f172a;
-  --color-bg-alt: #1e293b; /* Slightly lighter than main bg */
-  --color-text: #f8fafc;
-  --color-accent: #3b82f6;
+  --color-bg-alt: #1e293b;
+  --color-text: #f1f5f9;
+  --color-accent: #60a5fa;
   --color-muted: #94a3b8;
-  --color-border: #334155; /* Muted dark gray border */
+  --color-border: #334155;
+} */
+
+
+/* :root {
+  --color-bg: #f1f5f4;
+  --color-bg-alt: #e2f2ef;
+  --color-text: #1b2e2f;
+  --color-accent: #2dd4bf;
+  --color-muted: #6b9080;
+  --color-border: #cbd5d3;
 }
+
+[data-theme="dark"] {
+  --color-bg: #0f1a1a;
+  --color-bg-alt: #1a2c2b;
+  --color-text: #e0f2f1;
+  --color-accent: #5eead4;
+  --color-muted: #b5cfc7;
+  --color-border: #314947;
+} */
+
+
 
 body {
   background-color: var(--color-bg);

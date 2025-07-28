@@ -13,9 +13,9 @@ const ThemeToggleButton = () => {
       aria-label="Toggle Theme"
     >
       {theme === "dark" ? (
-        <FaSun className="text-yellow-400" />
+        <FaSun className="text-[var(--color-accent)" />
       ) : (
-        <FaMoon className="text-blue-600" />
+        <FaMoon className="text-[var(--color-accent)]" />
       )}
     </motion.button>
   );

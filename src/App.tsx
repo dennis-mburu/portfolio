@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <SkillGrid />
         <Contact />
+        <Footer />
       </main>
     </>
   );
